@@ -1,2 +1,2 @@
-# simple_gradient_descent_1
+# simple_gradient_descent
 A simple gradient descent
