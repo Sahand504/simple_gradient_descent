@@ -26,6 +26,7 @@ for i in range(1, MAX_STEP):
 
     current_beta = next_beta
     next_beta = current_beta - ALPHA * dfunc(current_beta)
+    print("beta (step " + str(step_count) + ") = " + str(next_beta))
 
     if next_beta < MIN_BETA or next_beta > MAX_BETA:
         print("ERROR! BETA GET OUT OF THE RANGE!")

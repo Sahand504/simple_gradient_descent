@@ -9,7 +9,6 @@ MIN_BETA, MAX_BETA = 0.5, 2.5
 PI = math.pi
 
 def func(beta):
-    print(beta)
     return (math.sin(10*PI*beta)/(2*beta)) + (beta-1)**4
 
 
@@ -31,6 +30,7 @@ for i in range(1, MAX_STEP):
 
     current_beta = next_beta
     next_beta = current_beta - ALPHA * dfunc(current_beta)
+    print("beta (step " + str(step_count) + ") = " + str(next_beta))
 
     if next_beta < MIN_BETA or next_beta > MAX_BETA:
         print("ERROR! BETA GET OUT OF THE RANGE!")
