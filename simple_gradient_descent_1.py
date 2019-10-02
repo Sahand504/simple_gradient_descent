@@ -41,6 +41,7 @@ for i in range(1, MAX_STEP):
     f_list.append(f)
     step_count += 1
 
+print("FINAL BETA = " + str(next_beta))
 plt.plot(list(range(1, step_count+1)), f_list)
 plt.xlabel("number of step")
 plt.ylabel("f")
